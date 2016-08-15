@@ -22,12 +22,12 @@ export class PatientsResolve implements Resolve<Patients> {
     }
 
     resolve(route: ActivatedRouteSnapshot): Promise<any> | any {
-        let patients = [];
+        let patients:Array<any> = [];
 
         return this.http.get(this.patientsJson)
             .toPromise()
             .then(response => {
-                response.json().patientList.forEach((obj, idx:number) => {
+                response.json().patientList.forEach((obj:any, idx:number) => {
                     let p = obj.patient;
                     patients.push(new Patients(
                         idx,

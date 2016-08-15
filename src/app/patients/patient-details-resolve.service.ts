@@ -13,7 +13,7 @@ export class Invoices {
 export class LabResults {
     constructor(public level: string,
                 public result: string,
-                public test: string,) {
+                public test: string) {
     }
 }
 
@@ -72,7 +72,7 @@ export class PatientDetailsResolve implements Resolve<any> {
             this.http.get('api/patient.json').toPromise().then(res => res.json()),
             this.http.get('api/physician.json').toPromise().then(res => res.json()),
             this.http.get('api/prescriptions.json').toPromise().then(res => res.json()),
-            this.http.get('api/visitations.json').toPromise().then(res => res.json()),
+            this.http.get('api/visitations.json').toPromise().then(res => res.json())
         )
             .toPromise()
             .then(
