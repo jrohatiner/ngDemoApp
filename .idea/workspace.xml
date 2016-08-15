@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85335efa-5a0c-4768-bcb1-2c7a21adf612" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0.c90d51050db0de1ebd3e.chunk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/invoices.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/labResults.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/patient.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/patients.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/physician.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/prescriptions.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/visitations.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.c90d51050db0de1ebd3e.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/doctor-01.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/left-arrow.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/patient-02.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/polyfills.c90d51050db0de1ebd3e.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor.c90d51050db0de1ebd3e.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ngDemoApp-ghPages.iws" />
@@ -25,18 +47,7 @@
     <favorites_list name="ngDemoApp-ghPages" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -56,10 +67,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -190,7 +201,7 @@
       <workItem from="1471303567811" duration="111000" />
       <workItem from="1471303746961" duration="35000" />
       <workItem from="1471303809354" duration="112000" />
-      <workItem from="1471304224441" duration="172000" />
+      <workItem from="1471304224441" duration="427000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1471303775663</created>
@@ -227,14 +238,28 @@
       <option name="project" value="LOCAL" />
       <updated>1471304372994</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updates">
+      <created>1471304410797</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1471304410797</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updates">
+      <created>1471304634773</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1471304634773</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="430000" />
+    <option name="totallyTimeSpent" value="685000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -242,7 +267,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3434453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3434453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -311,8 +336,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
