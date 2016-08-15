@@ -6,28 +6,31 @@ import {Router, ActivatedRoute} from '@angular/router';
 import {Patients} from "./patients-resolve.service";
 
 @Component({
-    template: require('./views/patients-list.component.html')
+	template: require('./views/patients-list.component.html')
 })
 
 
 export class PatientsListComponent implements OnInit {
-    patients: Patients;
+	patients: Patients;
 
 
-    constructor(private route: ActivatedRoute,
-                private router: Router) {
-    }
+	constructor(private route: ActivatedRoute,
+	            private router: Router) {
+	}
 
 
-    onPatient(patient: Patients) {
-        this.router.navigate(['/patients/patient']);
-    }
+	onPatient(patient: Patients) {
+		this.router.navigate(['/patients/patient']);
+	}
 
 
-    ngOnInit() {
-        this.route.data.forEach((data: { patients: Patients }) => {
-            this.patients = data.patients;
-        });
 
-    }
+	ngOnInit() {
+		this.route.data.forEach((data: { patients: Patients }) => {
+			this.patients = data.patients;
+		});
+
+		console.log('this.patients', this.patients)
+
+	}
 }
