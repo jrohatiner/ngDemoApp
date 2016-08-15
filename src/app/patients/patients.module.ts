@@ -11,6 +11,7 @@ import {PatientsComponent} from "./patients.component";
 import {PatientsResolve} from "./patients-resolve.service";
 import {PatientsListComponent} from "./patients-list.component";
 import {PatientDetailComponent} from "./patient-details.component";
+import {PatientDetailsResolve} from "./patient-details-resolve.service";
 
 @NgModule({
     imports: [
@@ -24,7 +25,9 @@ import {PatientDetailComponent} from "./patient-details.component";
         PatientDetailComponent
     ],
     providers: [
-        PatientsResolve
+        PatientsResolve,
+        PatientDetailsResolve
+
     ]
 })
 

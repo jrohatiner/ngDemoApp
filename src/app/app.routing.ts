@@ -5,9 +5,9 @@ import {load} from './utils/async-ng-module-loader';
 
 const patientsRoutes: Routes = [
     {
-    	path      : '',
-    	redirectTo: 'home',
-    	pathMatch : 'full'
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
     },
     {
         path: 'patients',

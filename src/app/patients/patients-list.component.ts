@@ -20,7 +20,7 @@ export class PatientsListComponent implements OnInit {
 
 
     onPatient(patient: Patients) {
-        this.router.navigate(['/patient']);
+        this.router.navigate(['/patients/patient']);
     }
 
 

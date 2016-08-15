@@ -11,6 +11,7 @@ import {PatientDetailComponent} from "./patient-details.component";
 
 //resolve
 import {PatientsResolve} from "./patients-resolve.service";
+import {PatientDetailsResolve} from "./patient-details-resolve.service";
 
 
 const patientsRoutes: Routes = [
@@ -20,7 +21,10 @@ const patientsRoutes: Routes = [
         children: [
             {
                 path: 'patient',
-                component: PatientDetailComponent
+                component: PatientDetailComponent,
+                resolve: {
+                    patientDetails: PatientDetailsResolve
+                }
 
             },
             {
