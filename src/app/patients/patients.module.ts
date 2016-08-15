@@ -9,6 +9,8 @@ import {CommonModule}   from '@angular/common';
 import {patientsRouting} from './patients.routing';
 import {PatientsComponent} from "./patients.component";
 import {PatientsResolve} from "./patients-resolve.service";
+import {PatientsListComponent} from "./patients-list.component";
+import {PatientDetailComponent} from "./patient-details.component";
 
 @NgModule({
     imports: [
@@ -17,7 +19,9 @@ import {PatientsResolve} from "./patients-resolve.service";
         patientsRouting
     ],
     declarations: [
-        PatientsComponent
+        PatientsComponent,
+        PatientsListComponent,
+        PatientDetailComponent
     ],
     providers: [
         PatientsResolve

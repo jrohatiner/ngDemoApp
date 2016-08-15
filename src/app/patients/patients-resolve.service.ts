@@ -27,7 +27,7 @@ export class PatientsResolve implements Resolve<Patients> {
         return this.http.get(this.patientsJson)
             .toPromise()
             .then(response => {
-                response.json().patientList.forEach((obj, idx) => {
+                response.json().patientList.forEach((obj, idx:number) => {
                     let p = obj.patient;
                     patients.push(new Patients(
                         idx,

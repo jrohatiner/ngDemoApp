@@ -4,7 +4,9 @@
 
 import {Routes, RouterModule}  from '@angular/router';
 import {PatientsComponent} from "./patients.component";
+
 import {PatientsListComponent} from "./patients-list.component";
+import {PatientDetailComponent} from "./patient-details.component";
 
 
 //resolve
@@ -17,20 +19,17 @@ const patientsRoutes: Routes = [
         component: PatientsComponent,
         children: [
             {
+                path: 'patient',
+                component: PatientDetailComponent
+
+            },
+            {
                 path: '',
                 component: PatientsListComponent,
-                    resolve: {
-                        patients: PatientsResolve
-                    }
-            },
-            // {
-            //     path: ':id',
-            //     component: PatientDetailComponent,
-            //     // canDeactivate: [CanDeactivateGuard],
-            //     // resolve: {
-            //     //     crisis: CrisisDetailResolve
-            //     // }
-            // }
+                resolve: {
+                    patients: PatientsResolve
+                }
+            }
         ]
     }
 ];
