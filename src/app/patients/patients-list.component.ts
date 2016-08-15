@@ -1,7 +1,9 @@
 /**
  * Created by ramor11 on 8/15/2016.
  */
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import {Patients} from "./patients-resolve.service";
 
 @Component({
     template: require('./views/patients-list.component.html')
@@ -9,4 +11,22 @@ import { Component } from '@angular/core';
 
 
 
-export class PatientsListComponent{}
+export class PatientsListComponent implements OnInit{
+    patients: Patients;
+
+    
+    constructor(
+        private route: ActivatedRoute,
+        private router: Router
+    ) { }
+
+
+    ngOnInit() {
+        this.route.data.forEach((data: { patients: Patients }) => {
+            this.patients = data.patients;
+
+        });
+        console.log('ngOnInit',this.patients )
+
+    }
+}

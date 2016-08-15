@@ -1,11 +1,13 @@
 import {Injectable}             from '@angular/core';
 import {Http} from '@angular/http'
 import {Router, Resolve, ActivatedRouteSnapshot} from '@angular/router';
-import {Observable}             from 'rxjs/Observable';
 
 
 export class Patients {
-    constructor(public patient: Object) {
+    constructor(public id: number,
+                public fname: string,
+                public lname: string,
+                public imageUrl: string) {
     }
 }
 
@@ -15,21 +17,36 @@ export class PatientsResolve implements Resolve<Patients> {
 
     private patientsJson = 'api/patients.json';  // URL to web api
 
-    constructor(private http: Http) {
+    constructor(private router: Router,
+                private http: Http) {
     }
 
-    resolve(route: ActivatedRouteSnapshot): Observable<any> | Promise<any> | any {
-
+    resolve(route: ActivatedRouteSnapshot): Promise<any> | any {
+        let patients = [];
 
         return this.http.get(this.patientsJson)
             .toPromise()
-            .then(response => response.json().data as Patients[])
+            .then(response => {
+                response.json().patientList.forEach((obj, idx) => {
+                    let p = obj.patient;
+                    patients.push(new Patients(
+                        idx,
+                        p.firstName,
+                        p.lastName,
+                        p.imageUrl
+                    ))
+                });
+
+                return patients
+            })
             .catch(this.handleError);
+
     }
 
 
     private handleError(error: any) {
         console.error('An error occurred', error);
+        this.router.navigate(['/home']);
         return Promise.reject(error.message || error);
     }
 }
