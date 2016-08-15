@@ -23,10 +23,11 @@ Then we will
 by running the command:
 
 ```
-npm start
-//or
 grunt serve
 ```
+
+I am using Grunt command to load modRewrite configuration to load the api/url to the localhost for http request
+
 
 Then visit [http://localhost:8080](http://localhost:8080) in your browser. You should see an application with the header `Angular 2 Simple Reddit`. 
 
@@ -42,5 +43,3 @@ If that doesn't work, [come chat with us](https://gitter.im/ng-book/ng-book  )!
 
 - `tsconfig.json` - this is instructions for our TypeScript compiler
 - `tslint.json` - `tslint` is a program and helps enforce rules about code style. The `tslint.json` is the config file that specifies conventions for this project.
-- `vendor` - for this project we're using [Semantic-UI](http://semantic-ui.com/) for the CSS. We've included the CSS files from Semantic here.
-- `resources` - this is where we store a few images
