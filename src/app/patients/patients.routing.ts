@@ -18,7 +18,7 @@ const patientsRoutes: Routes = [
         path: '',
         children: [
             {
-                path: 'patient',
+                path: 'patient/:id',
                 component: PatientDetailComponent,
                 resolve: {
                     patientDetails: PatientDetailsResolve

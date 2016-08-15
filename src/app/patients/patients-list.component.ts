@@ -20,7 +20,7 @@ export class PatientsListComponent implements OnInit {
 
 
 	onPatient(patient: Patients) {
-		this.router.navigate(['/patients/patient']);
+		this.router.navigate(['/patients/patient', patient.id]);
 	}
 
 
@@ -29,8 +29,5 @@ export class PatientsListComponent implements OnInit {
 		this.route.data.forEach((data: { patients: Patients }) => {
 			this.patients = data.patients;
 		});
-
-		console.log('this.patients', this.patients)
-
 	}
 }

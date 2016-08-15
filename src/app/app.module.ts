@@ -7,6 +7,7 @@ import {NgModule, NgModuleFactoryLoader}  from '@angular/core';
 import {BrowserModule}  from '@angular/platform-browser';
 import {FormsModule}    from '@angular/forms';
 import {AsyncNgModuleLoader} from './utils/async-ng-module-loader';
+import {LocationStrategy, HashLocationStrategy, PathLocationStrategy} from '@angular/common';
 
 //routing
 import {routing}        from './app.routing';
@@ -17,20 +18,21 @@ import {DashboardModule} from "./dashboard/dashboard.module";
 
 
 @NgModule({
-    imports: [
-        BrowserModule,
-        FormsModule,
-        routing,
-        HttpModule,
-        DashboardModule
-    ],
-    declarations: [
-        AppComponent
-    ],
-    providers: [
-        {provide: NgModuleFactoryLoader, useClass: AsyncNgModuleLoader}
-    ],
-    bootstrap: [AppComponent]
+	imports     : [
+		BrowserModule,
+		FormsModule,
+		routing,
+		HttpModule,
+		DashboardModule
+	],
+	declarations: [
+		AppComponent
+	],
+	providers   : [
+		{provide: LocationStrategy, useClass: HashLocationStrategy},
+		{provide: NgModuleFactoryLoader, useClass: AsyncNgModuleLoader}
+	],
+	bootstrap   : [AppComponent]
 })
 
 

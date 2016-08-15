@@ -86,6 +86,13 @@ module.exports = function (grunt) {
             src: '**',
             dest: '<%= yeoman.dist %>/api',
             filter: 'isFile'
+          },
+          {
+            expand: true,
+            cwd: '<%= yeoman.app %>/images',
+            src: '**',
+            dest: '<%= yeoman.dist %>/images',
+            filter: 'isFile'
           }
         ]
       }
