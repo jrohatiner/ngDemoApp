@@ -1,0 +1,429 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 0.875em/1.38 Roboto;
+  color: rgb(255, 255, 255);
+}
+
+.page-details {
+  color: rgb(0, 0, 0);
+}
+
+.page-edit,
+.page-index,
+.page-list {
+  color: rgb(255, 255, 255);
+}
+
+.appheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 414px;
+  height: 133px;
+  background: rgb(0, 127, 163);
+  background: -webkit-linear-gradient(270deg, rgb(0, 127, 163) 0%, rgb(0, 111, 143) 100%) rgb(222, 222, 222);
+  background:    -moz-linear-gradient(270deg, rgb(0, 127, 163) 0%, rgb(0, 111, 143) 100%) rgb(222, 222, 222);
+  background:      -o-linear-gradient(270deg, rgb(0, 127, 163) 0%, rgb(0, 111, 143) 100%) rgb(222, 222, 222);
+  background:     -ms-linear-gradient(270deg, rgb(0, 127, 163) 0%, rgb(0, 111, 143) 100%) rgb(222, 222, 222);
+  background:         linear-gradient(180deg, rgb(0, 127, 163) 0%, rgb(0, 111, 143) 100%) rgb(222, 222, 222);
+  background-repeat: no-repeat;
+}
+
+.applicationheadertext {
+  position: absolute;
+  top: 85px;
+  left: 10px;
+  font-size: 2.143em;
+  color: rgb(255, 255, 255);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 414px;
+  height: 736px;
+  background-color: rgb(222, 222, 222);
+}
+
+.header {
+  position: absolute;
+}
+
+.name {
+  position: relative;
+  float: left;
+  font-size: 1.714em;
+  color: rgb(31, 31, 31);
+}
+
+.panel {
+  position: absolute;
+}
+
+.repeater {
+  width: 400px;
+}
+
+.repeater .header {
+  font-size: 1em;
+}
+
+.text {
+  position: absolute;
+  left: 203px;
+  font-size: 1.143em;
+  color: rgb(0, 0, 0);
+}
+
+._button {
+  display: block;
+  position: absolute;
+  border-radius: 3px;
+  text-align: center;
+}
+
+._input {
+  display: block;
+  position: relative;
+  float: left;
+  width: 192px;
+  height: 24px;
+  margin-left: 196px;
+  padding: 0 10px;
+  background-color: rgb(242, 242, 242);
+  font-size: 1em;
+  color: rgb(31, 31, 31);
+}
+
+.repeater ._button {
+  width: 70px;
+  height: 22px;
+  font-size: 1em;
+}
+
+.repeater ._button:hover {
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+}
+
+.appheader-1,
+.appheader-2,
+.appheader-3 {
+  z-index: 2;
+}
+
+.appheader-4 {
+  z-index: 1;
+}
+
+.background-1,
+.background-2,
+.background-3 {
+  z-index: 1;
+}
+
+.header-1 {
+  top: 0;
+  left: 13px;
+  z-index: 8;
+  color: rgb(255, 255, 255);
+}
+
+.header-10 {
+  top: 210px;
+  left: 20px;
+  z-index: 5;
+  font-size: 1.143em;
+  color: rgb(242, 153, 74);
+}
+
+.header-11 {
+  top: 175px;
+  left: 20px;
+  z-index: 4;
+  font-size: 1.714em;
+  font-weight: 500;
+  color: rgb(31, 31, 31);
+}
+
+.header-12,
+.header-13,
+.header-5 {
+  top: 85px;
+  left: 10px;
+  z-index: 3;
+  font-size: 2.143em;
+  color: rgb(255, 255, 255);
+}
+
+.header-14 {
+  top: 144px;
+  left: 20px;
+  z-index: 3;
+  font-size: 1em;
+  color: rgb(151, 151, 151);
+}
+
+.header-15 {
+  top: 85px;
+  left: 10px;
+  z-index: 2;
+  font-size: 2.143em;
+  color: rgb(255, 255, 255);
+}
+
+.header-2 {
+  top: 110px;
+  left: 196px;
+  z-index: 11;
+  color: rgb(151, 151, 151);
+}
+
+.header-4 {
+  top: 110px;
+  left: 196px;
+  z-index: 9;
+  color: rgb(151, 151, 151);
+}
+
+.header-6 {
+  top: 187px;
+  left: 196px;
+  z-index: 10;
+  color: rgb(151, 151, 151);
+}
+
+.header-7 {
+  top: 187px;
+  left: 196px;
+  z-index: 14;
+  color: rgb(151, 151, 151);
+}
+
+.header-3,
+.header-8 {
+  top: 0;
+  left: 13px;
+  z-index: 10;
+  color: rgb(255, 255, 255);
+}
+
+.header-9 {
+  top: 238px;
+  left: 20px;
+  z-index: 6;
+  font-size: 0.714em;
+  color: rgb(151, 151, 151);
+}
+
+.name-1 {
+  z-index: 7;
+  margin: 25px 0 0 196px;
+}
+
+.name-2 {
+  clear: both;
+  z-index: 8;
+  margin-left: 196px;
+}
+
+.name-3 {
+  z-index: 7;
+  margin: 25px 0 0 104px;
+}
+
+.name-4 {
+  clear: both;
+  z-index: 8;
+  margin-left: 104px;
+}
+
+.panel-1,
+.panel-2 {
+  top: 32px;
+  left: 13px;
+  z-index: 6;
+  width: 175px;
+  height: 175px;
+  background-color: rgb(222, 222, 222);
+}
+
+.panel-4 {
+  top: 32px;
+  left: 13px;
+  z-index: 6;
+  width: 75px;
+  height: 75px;
+  background-color: rgb(222, 222, 222);
+}
+
+.panel-3,
+.panel-5,
+.panel-7 {
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 400px;
+  height: 20px;
+  background-color: rgb(0, 127, 163);
+}
+
+.panel-6,
+.panel-8 {
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 400px;
+  height: 315px;
+  border: 1px solid rgb(151, 151, 151);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.panel-9 {
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 400px;
+  height: 120px;
+  border: 1px solid rgb(151, 151, 151);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.repeater-1 {
+  position: absolute;
+  top: 145px;
+  left: 7px;
+  z-index: 18;
+  height: 315px;
+}
+
+.repeater-2 {
+  position: absolute;
+  top: 145px;
+  left: 7px;
+  z-index: 17;
+  height: 315px;
+}
+
+.repeater-3 {
+  position: relative;
+  float: left;
+  z-index: 11;
+  height: 120px;
+  margin: 145px 0 0 0.58073%;
+}
+
+.text-1 {
+  top: 235px;
+  z-index: 16;
+}
+
+.text-2 {
+  top: 209px;
+  z-index: 15;
+}
+
+.text-3 {
+  top: 158px;
+  z-index: 13;
+}
+
+.text-4 {
+  top: 132px;
+  z-index: 12;
+}
+
+._button-4 {
+  top: 345px;
+  left: 149px;
+  z-index: 7;
+  width: 116px;
+  height: 47px;
+  background-color: rgb(242, 153, 74);
+  font-size: 1.143em;
+  color: rgb(255, 255, 255);
+}
+
+._button-4:hover {
+  background-color: rgb(0, 127, 163);
+}
+
+.repeater ._button-1 {
+  top: 287px;
+  left: 247px;
+  z-index: 11;
+  background-color: rgb(242, 153, 74);
+  color: rgb(255, 255, 255);
+}
+
+.repeater ._button-2 {
+  top: 287px;
+  left: 324px;
+  z-index: 7;
+  background-color: rgb(242, 153, 74);
+  color: rgb(255, 255, 255);
+}
+
+.repeater ._button-1:hover,
+.repeater ._button-2:hover {
+  background-color: rgb(0, 127, 163);
+}
+
+.repeater ._button-3 {
+  top: 287px;
+  left: 324px;
+  z-index: 9;
+  background-color: rgb(222, 222, 222);
+  color: rgb(151, 151, 151);
+}
+
+.repeater ._button-5 {
+  top: 91px;
+  left: 322px;
+  z-index: 9;
+  background-color: rgb(222, 222, 222);
+  color: rgb(151, 151, 151);
+}
+
+.repeater ._button-3:hover,
+.repeater ._button-5:hover {
+  background-color: rgb(242, 153, 74);
+}
+
+.repeater ._input-1 {
+  z-index: 12;
+  margin-top: 32px;
+}
+
+.repeater ._input-2 {
+  clear: both;
+  z-index: 13;
+  margin-top: 8px;
+}
+
+.repeater ._input-3 {
+  clear: both;
+  z-index: 14;
+  margin-top: 41px;
+}
+
+.repeater ._input-4 {
+  clear: both;
+  z-index: 15;
+  margin-top: 8px;
+}
+
+.repeater ._input-5 {
+  clear: both;
+  z-index: 16;
+  margin-top: 22px;
+}
+
+.repeater ._input-6 {
+  clear: both;
+  z-index: 17;
+  margin-top: 8px;
+}
