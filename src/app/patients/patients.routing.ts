@@ -7,6 +7,10 @@ import {PatientsComponent} from "./patients.component";
 import {PatientsListComponent} from "./patients-list.component";
 
 
+//resolve
+import {PatientsResolve} from "./patients-resolve.service";
+
+
 const patientsRoutes: Routes = [
     {
         path: '',
@@ -14,7 +18,10 @@ const patientsRoutes: Routes = [
         children: [
             {
                 path: '',
-                component: PatientsListComponent
+                component: PatientsListComponent,
+                    resolve: {
+                        patients: PatientsResolve
+                    }
             },
             // {
             //     path: ':id',
