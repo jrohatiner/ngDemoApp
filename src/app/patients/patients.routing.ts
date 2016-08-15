@@ -3,7 +3,6 @@
  */
 
 import {Routes, RouterModule}  from '@angular/router';
-import {PatientsComponent} from "./patients.component";
 
 import {PatientsListComponent} from "./patients-list.component";
 import {PatientDetailComponent} from "./patient-details.component";
@@ -17,7 +16,6 @@ import {PatientDetailsResolve} from "./patient-details-resolve.service";
 const patientsRoutes: Routes = [
     {
         path: '',
-        component: PatientsComponent,
         children: [
             {
                 path: 'patient',

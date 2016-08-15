@@ -82,9 +82,9 @@ module.exports = function (grunt) {
           },
           {
             expand: true,
-            flatten: true,
-            src: ['<%= yeoman.app %>/api'],
-            dest: '<%= yeoman.dist %>',
+            cwd: '<%= yeoman.app %>/api',
+            src: '**',
+            dest: '<%= yeoman.dist %>/api',
             filter: 'isFile'
           }
         ]

@@ -1,3 +1,4 @@
+<!--
 <div *ngFor="let patient of patients" id="sm-repeater" class="repeater repeater-3 clearfix">
   <p id="panelheader" class="header header-8">EXAMPLE</p>
   <div id="sm-placeholder" class="panel panel-4"></div>
@@ -6,4 +7,9 @@
   <p id="lastname" class="name name-3">{{patient.lname}}</p>
   <p id="firstname" class="name name-4">{{patient.fname}}</p>
   <button (click)="onPatient(patient)" id="edit" class="_button _button-5">DETAILS</button>
+</div>
+-->
+<div *ngFor="let patient of patients" class="panel panel-primary">
+  <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+  <div class="panel-body"> Panel content</div>
 </div>

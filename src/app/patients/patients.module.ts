@@ -7,7 +7,6 @@ import {FormsModule}    from '@angular/forms';
 import {CommonModule}   from '@angular/common';
 
 import {patientsRouting} from './patients.routing';
-import {PatientsComponent} from "./patients.component";
 import {PatientsResolve} from "./patients-resolve.service";
 import {PatientsListComponent} from "./patients-list.component";
 import {PatientDetailComponent} from "./patient-details.component";
@@ -20,7 +19,6 @@ import {PatientDetailsResolve} from "./patient-details-resolve.service";
         patientsRouting
     ],
     declarations: [
-        PatientsComponent,
         PatientsListComponent,
         PatientDetailComponent
     ],

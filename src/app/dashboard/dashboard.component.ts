@@ -1,7 +1,7 @@
 /**
  * Created by ramor11 on 8/15/2016.
  */
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -9,7 +9,9 @@ import {Router} from '@angular/router';
 })
 
 
-export class DashboardComponent {
+export class DashboardComponent implements OnInit{
+    today:any;
+
     constructor(private router: Router) {
     }
 
@@ -17,5 +19,9 @@ export class DashboardComponent {
         this.router.navigate(['/patients']);
     }
 
+
+    ngOnInit() {
+        this.today =  new Date();
+    }
 
 }
