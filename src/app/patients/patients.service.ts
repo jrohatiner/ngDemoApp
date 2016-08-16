@@ -112,8 +112,8 @@ export class PatientService {
     }
 
 
-    // Uses http.get() to load a single JSON file
-    getDetails(id: number) {
+    //returning a promise
+    getDetails(id: any): Promise<any> | any {
 
         let self = this;
 
@@ -126,7 +126,7 @@ export class PatientService {
                 this.http.get('api/patient.json').toPromise().then(res => res.json()),
                 this.http.get('api/physician.json').toPromise().then(res => res.json()),
                 this.http.get('api/prescriptions.json').toPromise().then(res => res.json()),
-                this.http.get('api/visitations.json').toPromise().then(res => res.json()),
+                this.http.get('api/visitations.json').toPromise().then(res => res.json())
             )
                 .toPromise()
                 .then(
