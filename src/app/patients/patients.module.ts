@@ -7,7 +7,7 @@ import {FormsModule}    from '@angular/forms';
 import {CommonModule}   from '@angular/common';
 
 import {patientsRouting} from './patients.routing';
-import {PatientsResolve, PatientsService} from "./patients-resolve.service";
+import {PatientsResolve} from "./patients-resolve.service";
 import {PatientsListComponent} from "./patients-list.component";
 import {PatientDetailComponent} from "./patient-details.component";
 import {PatientDetailsResolve} from "./patient-details-resolve.service";
@@ -24,9 +24,7 @@ import {PatientDetailsResolve} from "./patient-details-resolve.service";
     ],
     providers: [
         PatientsResolve,
-        PatientDetailsResolve,
-        PatientsService
-
+        PatientDetailsResolve
     ]
 })
 
