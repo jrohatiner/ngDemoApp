@@ -70,8 +70,8 @@ export class Visitations {
 @Injectable()
 export class PatientService {
 
-    private patients: Array<any>;  // URL to web api
-    private patientDetails: Array<any>;  // URL to web api
+    private patients:Array<any> = [];
+    private patientDetails:Array<any> = [];
 
     constructor(private http: Http,
                 private router: Router) {
@@ -81,7 +81,7 @@ export class PatientService {
     // Uses http.get() to load a single JSON file
     getPatients() {
 
-        let patients: Array<any> = [];
+        let self = this;
 
         return this.http.get('api/patients.json').map((res: Response) => {
             res.json().patientList.forEach((obj: any, idx: number) => {
@@ -91,7 +91,7 @@ export class PatientService {
                 let max: number = Math.floor(4);
 
 
-                patients.push(new Patients(
+                self.patients.push(new Patients(
                     idx,
                     p.firstName,
                     p.lastName,
@@ -103,7 +103,7 @@ export class PatientService {
                 ))
             });
 
-            return patients;
+            return self.patients;
         });
     }
 
@@ -112,6 +112,7 @@ export class PatientService {
     getDetails(id: number) {
 
         console.log('id', id)
+        console.log('patients', this)
 
         return new Promise((resolve, reject) => {
             Observable.forkJoin(
