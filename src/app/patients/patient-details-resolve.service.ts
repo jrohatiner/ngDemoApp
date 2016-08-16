@@ -17,7 +17,6 @@ export class LabResults {
     }
 }
 
-
 export class Patient {
     constructor(public addressLine1: string,
                 public city: string,
@@ -72,7 +71,9 @@ export class PatientDetailsResolve implements Resolve<any> {
             this.http.get('api/patient.json').toPromise().then(res => res.json()),
             this.http.get('api/physician.json').toPromise().then(res => res.json()),
             this.http.get('api/prescriptions.json').toPromise().then(res => res.json()),
-            this.http.get('api/visitations.json').toPromise().then(res => res.json())
+            this.http.get('api/visitations.json').toPromise().then(res => res.json()),
+            //get all the patients again
+            this.http.get('api/patients.json').toPromise().then(res => res.json())
         )
             .toPromise()
             .then(
@@ -80,7 +81,10 @@ export class PatientDetailsResolve implements Resolve<any> {
                     let api = {
                         'invoices': data[0]['invoices'],
                         'labResults': data[1]['tests'],
-                        'patient': data[2],
+                        'patient': function (route:any) {
+                            let id: number = +route.params.id;
+                            return Object.assign({}, data[2], data[6].patientList[id].patient);
+                        }(route),
                         'physician': data[3],
                         'prescriptions': data[4]['prescriptions'],
                         'visitations': data[5]['visitations']

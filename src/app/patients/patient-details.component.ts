@@ -4,6 +4,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
 import {Invoices, LabResults, Patient, Visitations, Prescriptions, Physician} from "./patient-details-resolve.service";
+import {Patients} from "./patients-resolve.service";
 
 
 @Component({
@@ -26,6 +27,8 @@ export class PatientDetailComponent implements OnInit {
 
 
     ngOnInit() {
+
+
         this.route.data.forEach(data => {
             console.log('PatientDetailComponent => ', data)
             this.invoices = data['invoices'];
