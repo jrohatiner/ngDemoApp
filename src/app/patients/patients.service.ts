@@ -70,11 +70,11 @@ export class Visitations {
 @Injectable()
 export class PatientService {
 
-    private patients:Array<any> = [];
-    private patientDetails:Array<any> = [];
+    patients: Array<any> = [];
+    patientDetails: Array<any> = [];
 
     constructor(private http: Http,
-                private router: Router) {
+                private router: Router,) {
     }
 
 
@@ -112,7 +112,7 @@ export class PatientService {
     getDetails(id: number) {
 
         console.log('id', id)
-        console.log('patients', this)
+        console.log('patients', this.patients)
 
         return new Promise((resolve, reject) => {
             Observable.forkJoin(

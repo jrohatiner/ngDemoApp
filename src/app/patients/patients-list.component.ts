@@ -3,16 +3,18 @@
  */
 import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import {Patients} from "./patients.service";
+import {Patients, PatientService} from "./patients.service";
 
 @Component({
-    template: require('./views/patients-list.component.html')
+    template: require('./views/patients-list.component.html'),
+    providers:[
+        PatientService
+    ]
 })
 
 
 export class PatientsListComponent implements OnInit {
     patients: Patients;
-
 
     constructor(private route: ActivatedRoute,
                 private router: Router) {
@@ -20,6 +22,7 @@ export class PatientsListComponent implements OnInit {
 
     onPatient(patient: Patients) {
         console.log('onPatient', patient)
+
         this.router.navigate(['/patients/patient', patient.id]);
     }
 
