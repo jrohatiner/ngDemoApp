@@ -26,6 +26,8 @@ export class PatientsListComponent implements OnInit {
     ngOnInit() {
         this.route.data.forEach((data: { patients: Patients }) => {
             this.patients = data.patients;
+            console.log('patients', this.patients);
+
         });
     }
 }

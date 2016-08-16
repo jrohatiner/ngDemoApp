@@ -1,0 +1,40 @@
+<div class="panel panel-primary repeater-3">
+  <div class="panel-heading"><h3 class="panel-title">Patient Information</h3></div>
+  <div class="panel-body">
+    <div class="media">
+      <div class="col-xs-4" style="padding: 0">
+        <a href="#">
+          <img class="media-object"
+               [src]="patientInfo.imageUrl"
+               data-holder-rendered="true"
+               style="width: 100%; height: auto;"></a>
+      </div>
+      <div class="col-xs-8">
+        <div class="media-body">
+          <h4 class="media-heading">{{patientInfo.lastName}},{{patientInfo.firstName}} </h4>
+          <dl>
+            <dt>Address</dt>
+            <dd>
+              <span *ngIf="!edit">{{patientInfo.addressLine1}}</span>
+              <span *ngIf="edit"><input [(ngModel)]="patientInfo.addressLine1"></span>,
+              <br>
+              <span *ngIf="!edit">{{patientInfo.city}}</span>
+              <span *ngIf="edit"><input [(ngModel)]="patientInfo.city"></span>,
+              <span *ngIf="!edit">{{patientInfo.state}}</span>
+              <span *ngIf="edit"><input [(ngModel)]="patientInfo.state"></span>,
+              <span *ngIf="!edit">{{patientInfo.zip}}</span>
+              <span *ngIf="edit"><input [(ngModel)]="patientInfo.zip"></span>
+            </dd>
+            <dt>Contact Information</dt>
+            <dd *ngIf="!edit">{{patientInfo.phone}}</dd>
+            <dd *ngIf="edit"><input [(ngModel)]="patientInfo.phone"></dd>
+            <dd *ngIf="!edit">{{patientInfo.email}}</dd>
+            <dd *ngIf="edit"><input [(ngModel)]="patientInfo.email"></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <button *ngIf="!edit" (click)="onEdit()" type="button" class="btn btn-default btn-sm _button-5">EDIT</button>
+    <button *ngIf="edit" (click)="onSubmit(patientInfo)" type="button" class="btn btn-default btn-sm _button-5">SAVE</button>
+  </div>
+</div>

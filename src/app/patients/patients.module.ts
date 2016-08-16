@@ -12,6 +12,7 @@ import {PatientsListComponent} from "./patients-list.component";
 import {PatientDetailComponent} from "./patient-details.component";
 import {PatientDetailsResolve} from "./patient-details-resolve.service";
 import {PatientService} from "./patients.service";
+import {PatientInformationComponent} from "./patient-information.component";
 
 @NgModule({
     imports: [
@@ -21,7 +22,8 @@ import {PatientService} from "./patients.service";
     ],
     declarations: [
         PatientsListComponent,
-        PatientDetailComponent
+        PatientDetailComponent,
+        PatientInformationComponent
     ],
     providers: [
         PatientsResolve,

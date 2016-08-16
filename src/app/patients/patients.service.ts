@@ -9,9 +9,15 @@ import {Observable}             from 'rxjs/Rx';
 
 export class Patients {
     constructor(public id: number,
-                public fname: string,
-                public lname: string,
-                public imageUrl: string) {
+                public firstName: string,
+                public lastName: string,
+                public imageUrl: string,
+                public city?: string,
+                public email?: string,
+                public addressLine1?: string,
+                public phone?: string,
+                public state?: string,
+                public zip?: number) {
     }
 }
 
@@ -30,6 +36,7 @@ export class LabResults {
 
 export class Patient {
     constructor(public addressLine1: string,
+                public id: number,
                 public city: string,
                 public email: string,
                 public firstName: string,
@@ -72,7 +79,6 @@ export class PatientService {
     static instance: PatientService;
 
     patients: Array<any> = [];
-    patientDetails: Array<any> = [];
 
     constructor(private http: Http,
                 private router: Router) {
@@ -84,10 +90,13 @@ export class PatientService {
 
     // Uses http.get() to load a single JSON file
     getPatients() {
-
         let self = this;
 
+
+
         return this.http.get('api/patients.json').map((res: Response) => {
+            //reset
+            self.patients = [];
             res.json().patientList.forEach((obj: any, idx: number) => {
                 let p = obj.patient;
 
@@ -111,13 +120,21 @@ export class PatientService {
         });
     }
 
+    updatePatients(patient: Patient) {
+
+        // this.patients[patient.id] = patient;
+
+        console.log('updatePatients', this.patients)
+
+    }
+
 
     //returning a promise
     getDetails(id: any): Promise<any> | any {
 
         let self = this;
 
-        if(!this.patients.length)return this.handleError('failed to load patients');
+        // if(!this.patients.length)return this.handleError('failed to load patients');
 
         return new Promise((resolve, reject) => {
             Observable.forkJoin(
@@ -136,7 +153,7 @@ export class PatientService {
                             'invoices': data[0]['invoices'],
                             'labResults': data[1]['tests'],
                             'patient': function () {
-                                return Object.assign({}, data[2], self.patients[id]);
+                                return Object.assign({}, data[2], {imageUrl: self.patients[id].imageUrl});
                             }(),
                             'physician': data[3],
                             'prescriptions': data[4]['prescriptions'],
