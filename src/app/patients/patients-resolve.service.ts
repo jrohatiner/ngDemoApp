@@ -11,8 +11,6 @@ export class PatientsResolve implements Resolve<any> {
     }
 
     resolve(route: ActivatedRouteSnapshot): Promise<any> | any {
-
-
         return this.patientService.getPatients()
             .toPromise()
             .catch(this.handleError);

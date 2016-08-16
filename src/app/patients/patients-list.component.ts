@@ -3,7 +3,7 @@
  */
 import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import {Patients} from "./patients-resolve.service";
+import {Patients} from "./patients.service";
 
 @Component({
     template: require('./views/patients-list.component.html')
@@ -19,6 +19,7 @@ export class PatientsListComponent implements OnInit {
     }
 
     onPatient(patient: Patients) {
+        console.log('onPatient', patient)
         this.router.navigate(['/patients/patient', patient.id]);
     }
 

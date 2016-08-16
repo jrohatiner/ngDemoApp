@@ -3,8 +3,6 @@
  */
 import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import {Invoices, LabResults, Patient, Visitations, Prescriptions, Physician} from "./patient-details-resolve.service";
-import {Patients} from "./patients-resolve.service";
 
 
 @Component({
@@ -13,12 +11,12 @@ import {Patients} from "./patients-resolve.service";
 
 
 export class PatientDetailComponent implements OnInit {
-    invoices: Invoices[];
-    labResults: LabResults[];
-    patient: Patient;
-    physician: Physician;
-    prescriptions: Prescriptions;
-    visitations: Visitations;
+    // invoices: Invoices[];
+    // labResults: LabResults[];
+    // patient: Patient;
+    // physician: Physician;
+    // prescriptions: Prescriptions;
+    // visitations: Visitations;
 
 
     constructor(private route: ActivatedRoute,
@@ -28,15 +26,16 @@ export class PatientDetailComponent implements OnInit {
 
     ngOnInit() {
 
-        this.route.data.forEach((data:any) => {
-            let object:any = data.patientDetails;
-
-            this.invoices = object['invoices'];
-            this.labResults = object['labResults'];
-            this.patient = object['patient'];
-            this.physician = object['physician'];
-            this.prescriptions = object['prescriptions'];
-            this.visitations = object['visitations'];
+        this.route.data.forEach((data: any) => {
+            console.log('ngOnInit', data)
+            // let object:any = data.patientDetails;
+            //
+            // this.invoices = object['invoices'];
+            // this.labResults = object['labResults'];
+            // this.patient = object['patient'];
+            // this.physician = object['physician'];
+            // this.prescriptions = object['prescriptions'];
+            // this.visitations = object['visitations'];
         });
 
     }
