@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85335efa-5a0c-4768-bcb1-2c7a21adf612" name="Default" comment="update script">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/0.bc05e9873fab3ffeb114.chunk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/invoices.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/labResults.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/patient.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/patients.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/physician.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/prescriptions.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/visitations.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app.bc05e9873fab3ffeb114.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/doctor-01.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/left-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/patient-02.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/polyfills.bc05e9873fab3ffeb114.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor.bc05e9873fab3ffeb114.js" afterPath="" />
+    <list default="true" id="85335efa-5a0c-4768-bcb1-2c7a21adf612" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0.899f1ac9a8b9bfd993f1.chunk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/invoices.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/labResults.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/patient.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/patients.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/physician.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/prescriptions.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/visitations.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.899f1ac9a8b9bfd993f1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/doctor-01.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/left-arrow.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/patient-02.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/polyfills.899f1ac9a8b9bfd993f1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor.899f1ac9a8b9bfd993f1.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="ngDemoApp-ghPages.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,10 +68,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -216,7 +216,7 @@
       <workItem from="1471303809354" duration="112000" />
       <workItem from="1471304224441" duration="427000" />
       <workItem from="1471357522986" duration="293000" />
-      <workItem from="1471378674601" duration="8000" />
+      <workItem from="1471378674601" duration="628000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1471303775663</created>
@@ -281,14 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1471357599300</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update script">
+      <created>1471378684764</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1471378684764</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="986000" />
+    <option name="totallyTimeSpent" value="1606000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13909379" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -339,6 +346,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -346,17 +354,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor.e9808d0109f49547729e.js" />
-    <entry file="file://$PROJECT_DIR$/api/patient.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/polyfills.bc05e9873fab3ffeb114.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -364,10 +366,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/patient.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="95" selection-start-line="14" selection-start-column="95" selection-end-line="14" selection-end-column="95" />
+          <folding />
         </state>
       </provider>
     </entry>
