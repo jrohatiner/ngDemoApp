@@ -1,41 +1,54 @@
-<div id="lg-repeater" class="repeater repeater-2 clearfix" style="position: relative">
-  <p id="address" class="header header-2">PATIENT ADDRESS</p>
-  <p id="panelheader" class="header header-3">EXAMPLE</p>
-  <p id="lastname" class="name name-1">Last Name</p>
-  <p id="firstname" class="name name-2">First Name</p>
-  <p id="email" class="text text-1">email.address@server.com</p>
-  <p id="phone" class="text text-2">(999) 888-0000</p>
-  <p id="contact" class="header header-7">CONTACT INFORMATION</p>
-  <p id="citystate" class="text text-3">Anywhere, NC 27000</p>
-  <p id="street" class="text text-4">1313 Mockingbird Lane</p>
-  <button onClick="window.location='edit.html';" id="edit" class="_button _button-3">EDIT</button>
-  <div id="lg-placeholder" class="panel panel-2"></div>
-  <div id="panelheader" class="panel panel-5"></div>
-  <div id="panelbkg" class="panel panel-8"></div>
-</div>
-
 <div class="panel panel-primary repeater-3">
   <div class="panel-heading"><h3 class="panel-title">Patient Information</h3></div>
   <div class="panel-body">
     <div class="media">
-      <div class="col-xs-4" style="">
+      <div class="col-xs-4" style="padding: 0">
         <a href="#">
           <img class="media-object"
                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTY5MzcwMTk0ZSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1NjkzNzAxOTRlIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNCIgeT0iMzYuNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
                style="width: 100%; height: auto;"></a>
-
       </div>
       <div class="col-xs-8">
-        <div class="media-body col-xs-8">
-          <h4 class="media-heading">Last Name</h4>
-          <h4 class="media-heading">First Name</h4>
-
-
-          <button type="button" class="btn btn-default btn-sm _button-5">DETAILS</button>
-
+        <div class="media-body">
+          <h4 class="media-heading">{{patient.lastName}},{{patient.firstName}} </h4>
+          <dl>
+            <dt>Address</dt>
+            <dd>{{patient.addressLine1}},<br>
+              {{patient.city}},{{patient.state}},{{patient.zip}} </dd>
+            <dt>Contact Information</dt>
+            <dd>{{patient.phone}}</dd>
+            <dd>{{patient.email}}</dd>
+          </dl>
         </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-default btn-sm _button-5">EDIT</button>
+  </div>
+</div>
 
 
+<div class="panel panel-primary repeater-3">
+  <div class="panel-heading"><h3 class="panel-title">Physician Information</h3></div>
+  <div class="panel-body">
+    <div class="media">
+      <div class="col-xs-4" style="padding: 0">
+        <a href="#">
+          <img class="media-object"
+               src="images/doctor-01.svg"
+               style="width: 100%; height: auto;"></a>
+      </div>
+      <div class="col-xs-8">
+        <div class="media-body">
+          <h4 class="media-heading">{{physician.lastName}},{{physician.firstName}} </h4>
+          <dl>
+            <dt>Address</dt>
+            <dd>{{physician.addressLine1}},<br>
+              {{physician.city}},{{physician.state}},{{physician.zip}} </dd>
+            <dt>Contact Information</dt>
+            <dd>{{physician.phone}}</dd>
+            <dd>{{physician.email}}</dd>
+          </dl>
+        </div>
       </div>
     </div>
   </div>

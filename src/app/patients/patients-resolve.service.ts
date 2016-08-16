@@ -12,7 +12,6 @@ export class Patients {
 }
 
 
-
 @Injectable()
 export class PatientsResolve implements Resolve<Patients> {
 
@@ -41,7 +40,7 @@ export class PatientsResolve implements Resolve<Patients> {
                         p.lastName,
                         ['images/avatars/' + (idx % 2 ? 'male' : 'female'),
                             'avatar',
-                            (Math.floor(Math.random() * (max - min)) + min)].join('-') + '.png'
+                            (Math.floor(Math.random() * (max - min)) + min)].join('-') + '.png?' + (Date.now() + idx)
                     ))
                 });
 
