@@ -2,7 +2,7 @@
  * Created by ramor11 on 8/15/2016.
  */
 
-import {NgModule}       from '@angular/core';
+import {NgModule}  from '@angular/core';
 import {FormsModule}    from '@angular/forms';
 import {CommonModule}   from '@angular/common';
 

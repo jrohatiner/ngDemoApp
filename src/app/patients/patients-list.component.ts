@@ -3,13 +3,10 @@
  */
 import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import {Patients, PatientService} from "./patients.service";
+import {Patients} from "./patients.service";
 
 @Component({
-    template: require('./views/patients-list.component.html'),
-    providers:[
-        PatientService
-    ]
+    template: require('./views/patients-list.component.html')
 })
 
 
