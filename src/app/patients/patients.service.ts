@@ -69,12 +69,16 @@ export class Visitations {
 
 @Injectable()
 export class PatientService {
+    static instance: PatientService;
 
     patients: Array<any> = [];
     patientDetails: Array<any> = [];
 
     constructor(private http: Http,
                 private router: Router) {
+
+        return PatientService.instance = PatientService.instance || this;
+
     }
 
 
@@ -111,8 +115,9 @@ export class PatientService {
     // Uses http.get() to load a single JSON file
     getDetails(id: number) {
 
-        console.log('id', id)
-        console.log('patients', this.patients)
+        let self = this;
+
+        if(!this.patients.length)return this.handleError('failed to load patients');
 
         return new Promise((resolve, reject) => {
             Observable.forkJoin(
@@ -122,9 +127,6 @@ export class PatientService {
                 this.http.get('api/physician.json').toPromise().then(res => res.json()),
                 this.http.get('api/prescriptions.json').toPromise().then(res => res.json()),
                 this.http.get('api/visitations.json').toPromise().then(res => res.json()),
-
-                //TODO: need to improve on share services
-                this.http.get('api/patients.json').toPromise().then(res => res.json())
             )
                 .toPromise()
                 .then(
@@ -136,7 +138,7 @@ export class PatientService {
                             'invoices': data[0]['invoices'],
                             'labResults': data[1]['tests'],
                             'patient': function () {
-                                return Object.assign({}, data[2], data[6].patientList[id].patient);
+                                return Object.assign({}, data[2], self.patients[id]);
                             }(),
                             'physician': data[3],
                             'prescriptions': data[4]['prescriptions'],
