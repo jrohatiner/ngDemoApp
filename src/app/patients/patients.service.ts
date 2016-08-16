@@ -132,8 +132,6 @@ export class PatientService {
                 .then(
                     data => {
 
-                        console.log('getDetails', data)
-
                         let api = {
                             'invoices': data[0]['invoices'],
                             'labResults': data[1]['tests'],

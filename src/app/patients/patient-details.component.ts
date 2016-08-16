@@ -30,6 +30,8 @@ export class PatientDetailComponent implements OnInit {
         this.route.data.forEach((data: any) => {
             let object: any = data.patientDetails;
 
+            console.log('ngOnInit', object)
+
             this.invoices = object['invoices'];
             this.labResults = object['labResults'];
             this.patient = object['patient'];
