@@ -15,7 +15,7 @@ import {PatientDetailsResolve} from "./patient-details-resolve.service";
 
 const patientsRoutes: Routes = [
     {
-        path: '',
+        path: 'patients',
         children: [
             {
                 path: 'patient/:id',
