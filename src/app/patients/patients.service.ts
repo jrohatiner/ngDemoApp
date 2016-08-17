@@ -92,6 +92,9 @@ export class PatientService {
 	getPatients() {
 		let self = this;
 
+		let patients:any = require('../../api/patients.json');
+		console.log('JSON', patients)
+
 
 		return this.http.get('api/patients.json').map((res: Response) => {
 			//reset
