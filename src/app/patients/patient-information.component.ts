@@ -25,8 +25,6 @@ export class PatientInformationComponent {
 
 	onSubmit() {
 		this.edit = !this.edit;
-
-
 	}
 
 }

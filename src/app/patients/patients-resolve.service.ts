@@ -1,5 +1,5 @@
 import {Injectable}             from '@angular/core';
-import { Resolve, ActivatedRouteSnapshot} from '@angular/router';
+import {Resolve, ActivatedRouteSnapshot} from '@angular/router';
 import {PatientService} from "./patients.service";
 
 
@@ -12,5 +12,6 @@ export class PatientsResolve implements Resolve<any> {
     resolve(route: ActivatedRouteSnapshot): Promise<any> | any {
         return this.patientService.getPatients();
     }
+
 
 }

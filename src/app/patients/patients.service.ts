@@ -3,18 +3,19 @@
  */
 import {Injectable}             from '@angular/core';
 
+
 export class Patients {
-	constructor(public id: number,
-	            public firstName: string,
-	            public lastName: string,
-	            public imageUrl: string,
-	            public city?: string,
-	            public email?: string,
-	            public addressLine1?: string,
-	            public phone?: string,
-	            public state?: string,
-	            public zip?: number) {
-	}
+    constructor(public id: number,
+                public firstName: string,
+                public lastName: string,
+                public imageUrl: string,
+                public city?: string,
+                public email?: string,
+                public addressLine1?: string,
+                public phone?: string,
+                public state?: string,
+                public zip?: number) {
+    }
 }
 
 export class Invoices {

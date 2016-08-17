@@ -3,7 +3,6 @@
  */
 import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import {Invoices, LabResults, Patient, Physician, Prescriptions, Visitations} from "./patients.service";
 import {PatientInformationComponent} from "./patient-information.component";
 
 
@@ -14,12 +13,12 @@ import {PatientInformationComponent} from "./patient-information.component";
 
 
 export class PatientDetailComponent implements OnInit {
-    invoices: Invoices[];
-    labResults: LabResults[];
-    patient: Patient;
-    physician: Physician;
-    prescriptions: Prescriptions;
-    visitations: Visitations;
+    invoices: any;
+    labResults: any;
+    patient: any;
+    physician: any;
+    prescriptions: any;
+    visitations: any;
     patientOpts:any;
     physicianOpts:any;
 
@@ -45,8 +44,6 @@ export class PatientDetailComponent implements OnInit {
 
         this.route.data.forEach((data: any) => {
             let object: any = data.patientDetails;
-            console.log('data', object)
-
             this.invoices = object['invoices'];
             this.labResults = object['labResults'];
             this.patient = object['patient'];
