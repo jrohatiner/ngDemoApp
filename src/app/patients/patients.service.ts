@@ -2,10 +2,6 @@
  * Created by ramor11 on 8/16/2016.
  */
 import {Injectable}             from '@angular/core';
-import {Http, Response}         from '@angular/http'
-import {Router}                 from "@angular/router";
-import {Observable}             from 'rxjs/Rx';
-
 
 export class Patients {
 	constructor(public id: number,
@@ -80,8 +76,7 @@ export class PatientService {
 
 	patients: Array<any> = [];
 
-	constructor(private http: Http,
-	            private router: Router) {
+	constructor() {
 
 		return PatientService.instance = PatientService.instance || this;
 
@@ -89,17 +84,13 @@ export class PatientService {
 
 
 	// Uses http.get() to load a single JSON file
-	getPatients() {
+	getPatients(): Promise<any> | any {
 		let self = this;
-
-		let patients:any = require('../../api/patients.json');
-		console.log('JSON', patients)
-
-
-		return this.http.get('api/patients.json').map((res: Response) => {
+		let patientsJSON:any = JSON.parse(require('!!raw!../../api/patients.json'));
+		let loopThrough = function(loop:Array<any>){
 			//reset
 			self.patients = [];
-			res.json().patientList.forEach((obj: any, idx: number) => {
+			loop.forEach((obj: any, idx: number) => {
 				let p = obj.patient;
 
 				let min: number = Math.ceil(1);
@@ -118,15 +109,24 @@ export class PatientService {
 				))
 			});
 
-			return self.patients;
+		}
+
+		return new Promise((resolve) => {
+				//reset
+				loopThrough(patientsJSON.patientList);
+
+			resolve(self.patients);
 		});
-	}
 
-	updatePatients(patient: Patient) {
+		// return this.http.get('api/patients.json').map((res: Response) => {
+		// 	//reset
+		// 	self.patients = [];
+		// 	loopThrough(res.json().patientList);
+		//
+		// 	return self.patients;
+		// });
 
-		// this.patients[patient.id] = patient;
 
-		console.log('updatePatients', this.patients)
 
 	}
 
@@ -136,48 +136,68 @@ export class PatientService {
 
 		let self = this;
 
+
+
 		// if(!this.patients.length)return this.handleError('failed to load patients');
 
 		return new Promise((resolve, reject) => {
-			Observable.forkJoin(
-				this.http.get('api/invoices.json').toPromise().then(response => response.json()),
-				this.http.get('api/labResults.json').toPromise().then(res => res.json()),
-				this.http.get('api/patient.json').toPromise().then(res => res.json()),
-				this.http.get('api/physician.json').toPromise().then(res => res.json()),
-				this.http.get('api/prescriptions.json').toPromise().then(res => res.json()),
-				this.http.get('api/visitations.json').toPromise().then(res => res.json())
-			)
-				.toPromise()
-				.then(
-					data => {
+
+
+				let invoicesJSON:any = JSON.parse(require('!!raw!../../api/invoices.json'));
+				let labResultsJSON:any = JSON.parse(require('!!raw!../../api/labResults.json'));
+				let patientJSON:any = JSON.parse(require('!!raw!../../api/patient.json'));
+				let physicianJSON:any = JSON.parse(require('!!raw!../../api/physician.json'));
+				let prescriptionsJSON:any = JSON.parse(require('!!raw!../../api/prescriptions.json'));
+				let visitationsJSON:any = JSON.parse(require('!!raw!../../api/visitations.json'));
+
+
+			// Observable.forkJoin(
+			// 	this.http.get('api/invoices.json').toPromise().then(response => response.json()),
+			// 	this.http.get('api/labResults.json').toPromise().then(res => res.json()),
+			// 	this.http.get('api/patient.json').toPromise().then(res => res.json()),
+			// 	this.http.get('api/physician.json').toPromise().then(res => res.json()),
+			// 	this.http.get('api/prescriptions.json').toPromise().then(res => res.json()),
+			// 	this.http.get('api/visitations.json').toPromise().then(res => res.json())
+			// )
+			// 	.toPromise()
+			// 	.then(
+			// 		data => {
+
+						// let api = {
+						// 	'invoices'     : data[0]['invoices'],
+						// 	'labResults'   : data[1]['tests'],
+						// 	'patient'      : function () {
+						// 		return Object.assign({}, data[2], {imageUrl: self.patients.length ? self.patients[id].imageUrl : 'images/placeholder.svg'});
+						// 	}(),
+						// 	'physician'    : function () {
+						// 		return Object.assign({}, data[3], {imageUrl: 'images/doctor-01.svg'});
+						// 	}(),
+						// 	'prescriptions': data[4]['prescriptions'],
+						// 	'visitations'  : data[5]['visitations']
+						// };
 
 						let api = {
-							'invoices'     : data[0]['invoices'],
-							'labResults'   : data[1]['tests'],
+							'invoices'     : invoicesJSON['invoices'],
+							'labResults'   : labResultsJSON['tests'],
 							'patient'      : function () {
-								return Object.assign({}, data[2], {imageUrl: self.patients.length ? self.patients[id].imageUrl : 'images/placeholder.svg'});
+								return Object.assign({}, patientJSON, {imageUrl: self.patients.length ? self.patients[id].imageUrl : 'images/placeholder.svg'});
 							}(),
 							'physician'    : function () {
-								return Object.assign({}, data[3], {imageUrl: 'images/doctor-01.svg'});
+								return Object.assign({}, physicianJSON, {imageUrl: 'images/doctor-01.svg'});
 							}(),
-							'prescriptions': data[4]['prescriptions'],
-							'visitations'  : data[5]['visitations']
+							'prescriptions': prescriptionsJSON['prescriptions'],
+							'visitations'  : visitationsJSON['visitations']
 						};
 
+
 						resolve(api);
-					},
-					err => this.handleError(err)
-				)
-				.catch(this.handleError);
+				// 	},
+				// 	err => this.handleError(err)
+				// )
+				// .catch(this.handleError);
 		});
 
 
-	}
-
-	private handleError(error: any) {
-		console.error('An error occurred', error);
-		this.router.navigate(['/home']);
-		return Promise.reject(error.message || error);
 	}
 
 
