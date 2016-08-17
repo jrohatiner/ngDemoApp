@@ -10,5 +10,5 @@ require('!!style!css!less!../css/styles.less');
 
 
 export class AppComponent {
-	title = 'LabCorp Title';
+	title = 'Simple Mobile Test Application';
 }
