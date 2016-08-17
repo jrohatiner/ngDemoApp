@@ -3,7 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 const patientsRoutes: Routes = [
     {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'patients',
         pathMatch: 'full'
     }
 ];

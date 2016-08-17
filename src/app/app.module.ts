@@ -13,7 +13,6 @@ import {routing}        from './app.routing';
 
 //application declarations
 import {AppComponent}  from './app.component';
-import {DashboardModule} from "./dashboard/dashboard.module";
 import {PatientsModule} from "./patients/patients.module";
 
 
@@ -23,7 +22,6 @@ import {PatientsModule} from "./patients/patients.module";
         FormsModule,
         routing,
         HttpModule,
-        DashboardModule,
         PatientsModule
     ],
     declarations: [

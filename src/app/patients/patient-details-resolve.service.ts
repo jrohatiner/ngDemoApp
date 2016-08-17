@@ -10,10 +10,7 @@ export class PatientDetailsResolve implements Resolve<any> {
     }
 
     resolve(route: ActivatedRouteSnapshot): Promise<any> | any {
-        return function (route: any, patient: any) {
-            let id: any = route.params.id;
-            return patient.getDetails(id);
-        }(route, this.patientService);
+        return this.patientService.getDetails();
     }
 
 }
