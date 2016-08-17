@@ -3,8 +3,6 @@
  */
 
 import {Component} from '@angular/core';
-import {Patient, PatientService} from "./patients.service";
-import {Router} from "@angular/router";
 
 
 @Component({
@@ -15,18 +13,19 @@ import {Router} from "@angular/router";
 
 
 export class PatientInformationComponent {
+	patientInfo:any;
+	options:any
 
 	edit: boolean = false;
 
-	constructor(private patientService: PatientService,
-	            private router: Router) {
+	constructor() {
 	}
 
 	onEdit() {
 		this.edit = !this.edit;
 	}
 
-	onSubmit(patient: Patient) {
+	onSubmit() {
 		this.edit = !this.edit;
 
 

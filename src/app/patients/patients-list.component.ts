@@ -18,16 +18,12 @@ export class PatientsListComponent implements OnInit {
     }
 
     onPatient(patient: Patients) {
-        console.log('onPatient', patient)
-
         this.router.navigate(['/patients/patient', patient.id]);
     }
 
     ngOnInit() {
         this.route.data.forEach((data: { patients: Patients }) => {
             this.patients = data.patients;
-            console.log('patients', this.patients);
-
         });
     }
 }
