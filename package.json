@@ -89,6 +89,11 @@
     "webpack-merge": "^0.14.0",
     "webpack-notifier": "1.2.1",
     "webpack-reload-plugin": "0.1.2",
-    "worker-loader": "^0.6.0"
+    "worker-loader": "^0.6.0",
+
+    "express": "^4.14.0",
+    "compression": "^1.6.2",
+    "open": "0.0.5",
+    "path": "^0.12.7"
   }
 }
