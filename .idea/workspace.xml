@@ -2,32 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85335efa-5a0c-4768-bcb1-2c7a21adf612" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTTP/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/HTTP/.htaccess" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0.1d62312461d1c4685719.chunk.js" afterPath="$PROJECT_DIR$/HTTP/0.1d62312461d1c4685719.chunk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/invoices.json" afterPath="$PROJECT_DIR$/HTTP/api/invoices.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/labResults.json" afterPath="$PROJECT_DIR$/HTTP/api/labResults.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/patient.json" afterPath="$PROJECT_DIR$/HTTP/api/patient.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/patients.json" afterPath="$PROJECT_DIR$/HTTP/api/patients.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/physician.json" afterPath="$PROJECT_DIR$/HTTP/api/physician.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/prescriptions.json" afterPath="$PROJECT_DIR$/HTTP/api/prescriptions.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/visitations.json" afterPath="$PROJECT_DIR$/HTTP/api/visitations.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app.1d62312461d1c4685719.js" afterPath="$PROJECT_DIR$/HTTP/app.1d62312461d1c4685719.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-1.png" afterPath="$PROJECT_DIR$/HTTP/images/avatars/female-avatar-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-2.png" afterPath="$PROJECT_DIR$/HTTP/images/avatars/female-avatar-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-3.png" afterPath="$PROJECT_DIR$/HTTP/images/avatars/female-avatar-3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-4.png" afterPath="$PROJECT_DIR$/HTTP/images/avatars/female-avatar-4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-1.png" afterPath="$PROJECT_DIR$/HTTP/images/avatars/male-avatar-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-2.png" afterPath="$PROJECT_DIR$/HTTP/images/avatars/male-avatar-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-3.png" afterPath="$PROJECT_DIR$/HTTP/images/avatars/male-avatar-3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-4.png" afterPath="$PROJECT_DIR$/HTTP/images/avatars/male-avatar-4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/doctor-01.svg" afterPath="$PROJECT_DIR$/HTTP/images/doctor-01.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/left-arrow.svg" afterPath="$PROJECT_DIR$/HTTP/images/left-arrow.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/patient-02.svg" afterPath="$PROJECT_DIR$/HTTP/images/patient-02.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/placeholder.svg" afterPath="$PROJECT_DIR$/HTTP/images/placeholder.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/polyfills.1d62312461d1c4685719.js" afterPath="$PROJECT_DIR$/HTTP/polyfills.1d62312461d1c4685719.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor.1d62312461d1c4685719.js" afterPath="$PROJECT_DIR$/HTTP/vendor.1d62312461d1c4685719.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/0.1d62312461d1c4685719.chunk.js" afterPath="$PROJECT_DIR$/0.1d62312461d1c4685719.chunk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/api/invoices.json" afterPath="$PROJECT_DIR$/api/invoices.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/api/labResults.json" afterPath="$PROJECT_DIR$/api/labResults.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/api/patient.json" afterPath="$PROJECT_DIR$/api/patient.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/api/patients.json" afterPath="$PROJECT_DIR$/api/patients.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/api/physician.json" afterPath="$PROJECT_DIR$/api/physician.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/api/prescriptions.json" afterPath="$PROJECT_DIR$/api/prescriptions.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/api/visitations.json" afterPath="$PROJECT_DIR$/api/visitations.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/app.1d62312461d1c4685719.js" afterPath="$PROJECT_DIR$/app.1d62312461d1c4685719.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/avatars/female-avatar-1.png" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/avatars/female-avatar-2.png" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/avatars/female-avatar-3.png" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/avatars/female-avatar-4.png" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/avatars/male-avatar-1.png" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/avatars/male-avatar-2.png" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/avatars/male-avatar-3.png" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/avatars/male-avatar-4.png" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/doctor-01.svg" afterPath="$PROJECT_DIR$/images/doctor-01.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/left-arrow.svg" afterPath="$PROJECT_DIR$/images/left-arrow.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/patient-02.svg" afterPath="$PROJECT_DIR$/images/patient-02.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/images/placeholder.svg" afterPath="$PROJECT_DIR$/images/placeholder.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/polyfills.1d62312461d1c4685719.js" afterPath="$PROJECT_DIR$/polyfills.1d62312461d1c4685719.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HTTP/vendor.1d62312461d1c4685719.js" afterPath="$PROJECT_DIR$/vendor.1d62312461d1c4685719.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ngDemoApp-ghPages.iws" />
@@ -71,10 +70,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -101,6 +100,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -121,8 +122,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,13 +132,13 @@
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages" />
-      <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages\HTTP" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages" />
       <recent name="C:\Development\ngDemoApp-ghPages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages" />
+      <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages\HTTP" />
     </key>
   </component>
   <component name="RunManager">
@@ -215,7 +214,8 @@
       <workItem from="1471378674601" duration="637000" />
       <workItem from="1471380211723" duration="37000" />
       <workItem from="1471400455034" duration="68000" />
-      <workItem from="1471400596865" duration="58000" />
+      <workItem from="1471400596865" duration="66000" />
+      <workItem from="1471400698098" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1471303775663</created>
@@ -308,14 +308,21 @@
       <option name="project" value="LOCAL" />
       <updated>1471400516168</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update scripts">
+      <created>1471400657408</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1471400657408</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1778000" />
+    <option name="totallyTimeSpent" value="1804000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21654373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -364,7 +371,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HTTP/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -372,7 +379,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTTP/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -380,7 +387,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTTP/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -390,14 +397,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor.e9808d0109f49547729e.js" />
     <entry file="file://$PROJECT_DIR$/polyfills.bc05e9873fab3ffeb114.js" />
-    <entry file="file://$PROJECT_DIR$/HTTP/api/patient.json">
+    <entry file="file://$PROJECT_DIR$/api/patient.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTTP/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="78" selection-start-line="0" selection-start-column="78" selection-end-line="0" selection-end-column="78" />
