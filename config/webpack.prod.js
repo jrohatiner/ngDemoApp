@@ -25,7 +25,7 @@ module.exports = webpackMerge(commonConfig, {
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
       preserveComments: false,
-      mangle: true,
+      mangle: false,
       compress: {
         sequences: true,
         dead_code: true,

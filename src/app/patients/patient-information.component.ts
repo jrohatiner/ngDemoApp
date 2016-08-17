@@ -2,24 +2,22 @@
  * Created by ramor11 on 8/16/2016.
  */
 
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 
 @Component({
 	selector: 'patient-information',
-	inputs  : ['patientInfo', 'options'],
 	template: require('./views/patient-information.html')
 })
 
 
 export class PatientInformationComponent {
-	patientInfo:any;
-	options:any
+
+	@Input() patientInfo: any;
+	@Input() options: any;
 
 	edit: boolean = false;
 
-	constructor() {
-	}
 
 	onEdit() {
 		this.edit = !this.edit;

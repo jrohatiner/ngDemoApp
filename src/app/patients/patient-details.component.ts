@@ -4,10 +4,12 @@
 import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
 import {Invoices, LabResults, Patient, Physician, Prescriptions, Visitations} from "./patients.service";
+import {PatientInformationComponent} from "./patient-information.component";
 
 
 @Component({
-    template: require('./views/patient-details.component.html')
+    template: require('./views/patient-details.component.html'),
+    directives: [PatientInformationComponent]
 })
 
 
@@ -20,6 +22,8 @@ export class PatientDetailComponent implements OnInit {
     visitations: Visitations;
     patientOpts:any;
     physicianOpts:any;
+
+
 
 
     constructor(private route: ActivatedRoute,
