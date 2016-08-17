@@ -65,7 +65,6 @@ export class PatientService {
         });
     }
 
-
     //returning a promise
     getDetails(id: any): Promise<any> | any {
 
