@@ -1,7 +1,5 @@
 import {Component}          from '@angular/core';
 
-import './rxjs-extensions.ts';
-
 require('!!style!css!less!../css/styles.less');
 
 
