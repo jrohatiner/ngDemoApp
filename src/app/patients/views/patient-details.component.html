@@ -1,33 +1,11 @@
 <patient-information
-  [patientInfo]="patient"></patient-information>
+  [patientInfo]="patient"
+  [options]="patientOpts"></patient-information>
 
-<div class="panel panel-primary repeater-3">
-  <div class="panel-heading"><h3 class="panel-title">Physician Information</h3></div>
-  <div class="panel-body">
-    <div class="media">
-      <div class="col-xs-4" style="padding: 0">
-        <a href="#">
-          <img class="media-object"
-               src="images/doctor-01.svg"
-               style="width: 100%; height: auto;"></a>
-      </div>
-      <div class="col-xs-8">
-        <div class="media-body">
-          <h4 class="media-heading">{{physician.lastName}},{{physician.firstName}} </h4>
-          <dl>
-            <dt>Address</dt>
-            <dd>{{physician.addressLine1}},<br>
-              {{physician.city}},{{physician.state}},{{physician.zip}}
-            </dd>
-            <dt>Contact Information</dt>
-            <dd>{{physician.phone}}</dd>
-            <dd>{{physician.email}}</dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<patient-information
+  [patientInfo]="physician"
+  [options]="physicianOpts"></patient-information>
+
 
 
 <div class="panel panel-primary repeater-3">

@@ -8,31 +8,28 @@ import {Router} from "@angular/router";
 
 
 @Component({
-    selector: 'patient-information',
-    inputs: ['patientInfo'],
-    template: require('./views/patient-information.html')
+	selector: 'patient-information',
+	inputs  : ['patientInfo', 'options'],
+	template: require('./views/patient-information.html')
 })
 
 
 export class PatientInformationComponent {
 
-    edit: boolean = false;
+	edit: boolean = false;
 
-    constructor(private patientService: PatientService,
-                private router: Router) {
-    }
+	constructor(private patientService: PatientService,
+	            private router: Router) {
+	}
 
-    onEdit() {
-        this.edit = !this.edit;
-    }
+	onEdit() {
+		this.edit = !this.edit;
+	}
 
-    onSubmit(patient: Patient) {
-        console.log('onSubmit', patient);
-        this.patientService.updatePatients(patient);
-        this.edit = !this.edit;
-        // this.router.navigate(['/patients']);
+	onSubmit(patient: Patient) {
+		this.edit = !this.edit;
 
 
-    }
+	}
 
 }

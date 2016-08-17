@@ -1,5 +1,5 @@
 <div class="panel panel-primary repeater-3">
-  <div class="panel-heading"><h3 class="panel-title">Patient Information</h3></div>
+  <div class="panel-heading"><h3 class="panel-title">{{options.title}}</h3></div>
   <div class="panel-body">
     <div class="media">
       <div class="col-xs-4" style="padding: 0">
@@ -34,7 +34,12 @@
         </div>
       </div>
     </div>
-    <button *ngIf="!edit" (click)="onEdit()" type="button" class="btn btn-default btn-sm _button-5">EDIT</button>
-    <button *ngIf="edit" (click)="onSubmit(patientInfo)" type="button" class="btn btn-default btn-sm _button-5">SAVE</button>
+    <div *ngIf="options.allowEdit">
+      <button *ngIf="!edit" (click)="onEdit()" type="button" class="btn btn-default btn-sm _button-5">EDIT</button>
+      <button *ngIf="edit" (click)="onSubmit(patientInfo)" type="button" class="btn btn-default btn-sm _button-5">SAVE
+      </button>
+
+    </div>
+
   </div>
 </div>

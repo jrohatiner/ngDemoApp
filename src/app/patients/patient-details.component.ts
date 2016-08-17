@@ -18,10 +18,22 @@ export class PatientDetailComponent implements OnInit {
     physician: Physician;
     prescriptions: Prescriptions;
     visitations: Visitations;
+    patientOpts:any;
+    physicianOpts:any;
 
 
     constructor(private route: ActivatedRoute,
                 private router: Router) {
+
+        this.patientOpts = {
+            title:'Patient Information',
+            allowEdit:true
+        };
+
+        this.physicianOpts = {
+            title:'Physician Information',
+            allowEdit:false
+        };
     }
 
 
