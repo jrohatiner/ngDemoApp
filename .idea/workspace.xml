@@ -2,31 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85335efa-5a0c-4768-bcb1-2c7a21adf612" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/0.67106c32c100088bceed.chunk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/invoices.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/labResults.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/patient.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/patients.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/physician.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/prescriptions.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/visitations.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app.67106c32c100088bceed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/doctor-01.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/left-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/patient-02.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/placeholder.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/polyfills.67106c32c100088bceed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor.67106c32c100088bceed.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0.292a7a639d179689857f.chunk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/invoices.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/labResults.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/patient.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/patients.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/physician.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/prescriptions.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/visitations.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.292a7a639d179689857f.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/doctor-01.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/left-arrow.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/patient-02.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/placeholder.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="ngDemoApp-ghPages.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +47,18 @@
     <favorites_list name="ngDemoApp-ghPages" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -59,8 +69,8 @@
       <list>
         <option value="$PROJECT_DIR$/HTTP/index.html" />
         <option value="$PROJECT_DIR$/app.1d62312461d1c4685719.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -133,13 +143,13 @@
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages" />
-      <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages\HTTP" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Development\ngDemoApp-ghPages" />
       <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages" />
+      <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages\HTTP" />
     </key>
   </component>
   <component name="RunManager">
@@ -230,7 +240,7 @@
       <workItem from="1471400698098" duration="18000" />
       <workItem from="1471436838749" duration="74000" />
       <workItem from="1471437770670" duration="665000" />
-      <workItem from="1471442912559" duration="20000" />
+      <workItem from="1471442912559" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1471303775663</created>
@@ -358,17 +368,24 @@
       <option name="project" value="LOCAL" />
       <updated>1471439313068</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updates">
+      <created>1471442937190</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1471442937190</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2563000" />
+    <option name="totallyTimeSpent" value="2599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21654373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21654373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -402,13 +419,13 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="adding base href" />
-    <MESSAGE value="updates" />
     <MESSAGE value="update to push new build" />
     <MESSAGE value="update script" />
     <MESSAGE value="comment polyfils" />
     <MESSAGE value="update scripts" />
     <MESSAGE value="added README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="added README.md" />
+    <MESSAGE value="updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -419,6 +436,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -426,6 +444,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -433,6 +452,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -446,13 +466,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.1d62312461d1c4685719.js" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -464,6 +477,14 @@
       </provider>
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
