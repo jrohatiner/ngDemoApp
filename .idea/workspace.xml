@@ -2,31 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85335efa-5a0c-4768-bcb1-2c7a21adf612" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/0.1d62312461d1c4685719.chunk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/invoices.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/labResults.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/patient.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/patients.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/physician.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/prescriptions.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/visitations.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app.1d62312461d1c4685719.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/female-avatar-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/avatars/male-avatar-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/doctor-01.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/left-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/patient-02.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/placeholder.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/polyfills.1d62312461d1c4685719.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor.1d62312461d1c4685719.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/female-avatar-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatars/male-avatar-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0.67106c32c100088bceed.chunk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/invoices.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/labResults.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/patient.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/patients.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/physician.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/prescriptions.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/visitations.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.67106c32c100088bceed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/doctor-01.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/left-arrow.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/patient-02.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/placeholder.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/polyfills.67106c32c100088bceed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor.67106c32c100088bceed.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="ngDemoApp-ghPages.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +49,18 @@
     <favorites_list name="ngDemoApp-ghPages" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -57,9 +69,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/HTTP/index.html" />
         <option value="$PROJECT_DIR$/app.1d62312461d1c4685719.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -132,13 +144,13 @@
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages" />
-      <recent name="C:\Development\ngDemoApp-ghPages" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages" />
       <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages\HTTP" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\ngDemoApp-ghPages" />
+      <recent name="C:\Users\reyra\Documents\development\ngDemoApp-ghPages" />
     </key>
   </component>
   <component name="RunManager">
@@ -228,7 +240,7 @@
       <workItem from="1471400596865" duration="66000" />
       <workItem from="1471400698098" duration="18000" />
       <workItem from="1471436838749" duration="74000" />
-      <workItem from="1471437770670" duration="14000" />
+      <workItem from="1471437770670" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1471303775663</created>
@@ -335,17 +347,24 @@
       <option name="project" value="LOCAL" />
       <updated>1471436903422</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update scripts">
+      <created>1471437788882</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1471437788882</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1892000" />
+    <option name="totallyTimeSpent" value="1936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21654373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21654373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -395,6 +414,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -402,6 +422,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -409,6 +430,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -421,17 +443,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="78" selection-start-line="0" selection-start-column="78" selection-end-line="0" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.1d62312461d1c4685719.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="3" column="4661" selection-start-line="3" selection-start-column="4661" selection-end-line="3" selection-end-column="4661" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
