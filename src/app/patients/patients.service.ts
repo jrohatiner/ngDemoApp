@@ -3,7 +3,6 @@
  */
 import {Injectable}             from '@angular/core';
 import {Http, Response}         from '@angular/http'
-import {Router}                 from "@angular/router";
 import {Observable}             from 'rxjs/Rx';
 
 
@@ -28,8 +27,7 @@ export class PatientService {
 
     patients: Array<any> = [];
 
-    constructor(private http: Http,
-                private router: Router) {
+    constructor(private http: Http) {
 
         return PatientService.instance = PatientService.instance || this;
 
