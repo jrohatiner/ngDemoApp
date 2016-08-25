@@ -57,7 +57,7 @@ export class PatientService {
                         'avatar',
                         //this is to force a new http for every image being loaded, simulate proper images, since
                         //everyone don't look the same.
-                        (Math.floor(Math.random() * (max - min)) + min)].join('-') + '.png?' + (Date.now() + idx)
+                        (Math.floor(Math.random() * (max - min)) + min)].join('-') + '.png'
                 ))
             });
 
