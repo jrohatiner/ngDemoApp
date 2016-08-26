@@ -75,7 +75,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      hash: true,
+      // hash: true,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
