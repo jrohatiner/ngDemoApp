@@ -6,7 +6,8 @@ import {Router, ActivatedRoute} from '@angular/router';
 import {Patients} from "./patients.service";
 
 @Component({
-    template: require('./views/patients-list.component.html')
+    // template: require('./views/patients-list.component.html')
+    templateUrl: './views/patients-list.component.html'
 })
 
 

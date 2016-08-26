@@ -22,13 +22,21 @@ module.exports = {
 
       {
         test: /^(?!.*\.min\.css$).*\.css$/,
-        loader: ExtractTextPlugin.extract({fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap'})
+        // loader: ExtractTextPlugin.extract('style', 'css?sourceMap'),
+        // test: /\.css$/,
+        exclude: helpers.root('src', 'app'),
+        loader: ExtractTextPlugin.extract('style', 'css?sourceMap')
       },
       {
-        test: /\.less$/,
-        // loader: "style!css!less"
-        loader: "raw!less"
+        test: /\.css$/,
+        include: helpers.root('src', 'app'),
+        loader: 'raw'
       },
+      // {
+      //   test: /\.less$/,
+      //   // loader: "style!css!less"
+      //   loader: "raw!less"
+      // },
       {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader"},
       {test: /\.html$/, loader: "raw"},
       {

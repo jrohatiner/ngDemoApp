@@ -1,14 +1,15 @@
 import {Component}          from '@angular/core';
 
-require('!!style!css!less!../css/styles.less');
-
+import '../css/bootstrap.css';
+import '../css/styles.css';
+// require("../css/bootstrap.min.css");
+// require("../css/styles.css");
 
 @Component({
-	selector: 'my-app',
-	template: require('./app.component.html')
+    selector: 'my-app',
+    templateUrl: './app.component.html',
 })
 
 
 export class AppComponent {
-	title = 'LabCorp Title';
 }
