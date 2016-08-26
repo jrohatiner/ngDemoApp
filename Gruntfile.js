@@ -1,6 +1,7 @@
 var path = require('path'),
   fs = require('fs'),
   modRewrite = require('connect-modrewrite');
+var compression = require('compression');
 
 
 module.exports = function (grunt) {
@@ -120,10 +121,14 @@ module.exports = function (grunt) {
       dist: {
         options: {
           base: '<%= yeoman.dist %>',
-          middleware: function (connect) {
+          middleware: function (connect, options, middlewares) {
+            middlewares.unshift(compression());
+
             return [
               modRewrite(['^[^\\.]*$ /index.html [L]']),
-              mountFolder(connect, appConfig.dist)
+              mountFolder(connect, appConfig.dist),
+              middlewares
+
             ];
           }
         }

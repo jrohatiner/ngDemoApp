@@ -5,11 +5,11 @@
 var express = require('express');
 var path = require('path');
 var open = require('open');
-// var compression = require('compression');
+var compression = require('compression');
 var port = 9000;
 var app = express();
 
-// app.use(compression());
+app.use(compression());
 app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('*', function(req, res) {

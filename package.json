@@ -31,11 +31,14 @@
   },
   "devDependencies": {
     "angular2-template-loader": "^0.4.0",
+    "compression": "^1.6.2",
+    "compression-webpack-plugin": "^0.3.1",
     "concurrently": "^2.0.0",
     "connect-modrewrite": "^0.9.0",
     "css-loader": "^0.23.1",
     "exports-loader": "0.6.2",
     "expose-loader": "0.7.1",
+    "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "grunt": "^0.4.5",
@@ -71,6 +74,8 @@
     "less-loader": "^0.7.8",
     "load-grunt-tasks": "^3.5.0",
     "null-loader": "^0.1.1",
+    "open": "0.0.5",
+    "path": "^0.12.7",
     "phantomjs-prebuilt": "^2.1.7",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.2",
@@ -87,11 +92,6 @@
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.14.0",
     "webpack-notifier": "1.2.1",
-    "webpack-reload-plugin": "0.1.2",
-
-    "express": "^4.14.0",
-    "compression": "^1.6.2",
-    "open": "0.0.5",
-    "path": "^0.12.7"
+    "webpack-reload-plugin": "0.1.2"
   }
 }
