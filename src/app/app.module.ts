@@ -5,8 +5,6 @@ import {HttpModule} from '@angular/http';
  */
 import {NgModule}  from '@angular/core';
 import {BrowserModule}  from '@angular/platform-browser';
-import {FormsModule}    from '@angular/forms';
-import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 //routing
 import {routing}        from './app.routing';
@@ -19,16 +17,12 @@ import {PatientsModule} from "./patients/patients.module";
 @NgModule({
 	imports: [
 		BrowserModule,
-		FormsModule,
 		routing,
 		HttpModule,
 		PatientsModule
 	],
 	declarations: [
 		AppComponent
-	],
-	providers: [
-		{provide: LocationStrategy, useClass: HashLocationStrategy}
 	],
 	bootstrap: [AppComponent]
 })

@@ -7,8 +7,6 @@ var helpers = require('./helpers');
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 
 module.exports = webpackMerge(commonConfig, {
-  devtool: 'source-map',
-
   output: {
     path: helpers.root('dist'),
     publicPath: '/',
@@ -23,6 +21,9 @@ module.exports = webpackMerge(commonConfig, {
   plugins: [
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.MinChunkSizePlugin({
+      minChunkSize: 51200, // ~50kb
+    }),
     new webpack.optimize.UglifyJsPlugin({
       preserveComments: false,
       mangle: false,
