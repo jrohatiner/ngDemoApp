@@ -44,20 +44,11 @@ export class PatientService {
             self.patients = [];
             res.json().patientList.forEach((obj: any, idx: number) => {
                 let p = obj.patient;
-
-                let min: number = Math.ceil(1);
-                let max: number = Math.floor(4);
-
-
                 self.patients.push(new Patients(
                     idx,
                     p.firstName,
                     p.lastName,
-                    ['images/avatars/' + (idx % 2 ? 'male' : 'female'),
-                        'avatar',
-                        //this is to force a new http for every image being loaded, simulate proper images, since
-                        //everyone don't look the same.
-                        (Math.floor(Math.random() * (max - min)) + min)].join('-') + '.png'
+                    'images/patient-02.svg'
                 ))
             });
 
@@ -84,7 +75,7 @@ export class PatientService {
                     'invoices': data[0]['invoices'],
                     'labResults': data[1]['tests'],
                     'patient': function () {
-                        return Object.assign({}, data[2], {imageUrl: self.patients.length ? self.patients[id].imageUrl : 'images/placeholder.svg'});
+                        return Object.assign({}, data[2],  {imageUrl: 'images/patient-02.svg'});
                     }(),
                     'physician': function () {
                         return Object.assign({}, data[3], {imageUrl: 'images/doctor-01.svg'});
