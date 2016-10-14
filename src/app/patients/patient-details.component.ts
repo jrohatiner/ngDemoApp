@@ -8,7 +8,7 @@ import {PatientInformationComponent} from "./patient-information.component";
 
 @Component({
     template: require('./views/patient-details.component.html'),
-    directives: [PatientInformationComponent]
+    providers : [PatientInformationComponent]
 })
 
 
