@@ -6,7 +6,7 @@ import {HttpModule} from '@angular/http';
 import {NgModule, NgModuleFactoryLoader}  from '@angular/core';
 import {BrowserModule}  from '@angular/platform-browser';
 import {FormsModule}    from '@angular/forms';
-import {LocationStrategy, HashLocationStrategy, PathLocationStrategy} from '@angular/common';
+// import {LocationStrategy, HashLocationStrategy, PathLocationStrategy} from '@angular/common';
 
 //routing
 import {routing}        from './app.routing';
@@ -28,7 +28,7 @@ import {DashboardModule} from "./dashboard/dashboard.module";
         AppComponent
     ],
     providers: [
-        {provide: LocationStrategy, useClass: HashLocationStrategy}
+        // {provide: LocationStrategy, useClass: HashLocationStrategy}
     ],
     bootstrap: [AppComponent]
 })
