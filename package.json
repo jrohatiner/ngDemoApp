@@ -7,7 +7,8 @@
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "build:serve": "npm run build && node express.js",
-    "postinstall": "typings install"
+    "postinstall": "typings install",
+    "minify": "uglifyjs dist/bundle.js --screw-ie8 --compress --mangle --output dist/bundle.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -32,8 +33,10 @@
   },
   "devDependencies": {
     "angular2-template-loader": "^0.4.0",
+    "compression-webpack-plugin": "^0.3.1",
     "concurrently": "^2.0.0",
     "connect-modrewrite": "^0.9.0",
+    "copy-webpack-plugin": "^3.0.1",
     "exports-loader": "0.6.2",
     "expose-loader": "0.7.1",
     "imports-loader": "0.6.4",
