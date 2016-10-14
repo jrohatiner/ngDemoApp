@@ -6,6 +6,7 @@
     "start": "webpack-dev-server --content-base src --inline --progress --port 9000",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "build:serve": "npm run build && node express.js",
     "postinstall": "typings install"
   },
   "license": "MIT",
