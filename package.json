@@ -4,7 +4,7 @@
   "description": "A webpack starter for angular 2",
   "engines": {
     "node": "6.11.1"
-  }
+  },
   "scripts": {
     "start": "webpack-dev-server --content-base src --inline --progress --port 9000",
     "test": "karma start",
