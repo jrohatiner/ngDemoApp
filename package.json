@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A webpack starter for angular 2",
   "engines": {
-    "node": "6.11.1"
+    "node": "8.2.1"
   },
   "scripts": {
     "start": "webpack-dev-server --content-base src --inline --progress --port 9000",
