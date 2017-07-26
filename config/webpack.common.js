@@ -6,13 +6,20 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
 
 
+/*
+ * Webpack Constants
+ */
+var METADATA = {
+  isDevServer: helpers.isWebpackDevServer()
+};
+
 module.exports = {
   context: path.dirname(__dirname),
   cache: true,
 
+  metadata: METADATA,
 
   entry: {
-    // 'polyfills': './src/polyfills.ts',
     // 'vendor': './src/vendor.ts',
     'app': './src/main.ts'
   },
@@ -32,13 +39,17 @@ module.exports = {
       {
         test: /^(?!.*\.min\.css$).*\.css$/,
         // include: helpers.root('src', 'app'),
-        // loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap"
         loader: ExtractTextPlugin.extract({fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap'})
       },
       {
         test: /\.less$/,
-        // loader: "style!css!less"
-        loader: "raw!less"
+        include: helpers.root('src'),
+        loader: "style!css!less"
+      },
+      {
+        test: /\.less$/,
+        exclude: helpers.root('src'),
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader!less-loader")
       },
       {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader"},
       {test: /\.html$/, loader: "raw"},
@@ -68,10 +79,7 @@ module.exports = {
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app'
-        // , 'vendor'
-        // , 'polyfills'
-      ]
+      name: ['bundle']
     }),
 
     new HtmlWebpackPlugin({
